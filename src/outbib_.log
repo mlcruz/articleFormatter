@@ -1,0 +1,242 @@
+-removed date from abntex2-wiki-como-customizar
+-removed date from talbot2012
+-removed month from talbot2012
+-removed date from babel
+-removed month from babel
+-removed url from abntex2modelo-artigo
+-removed date from abntex2modelo-artigo
+-removed url from abntex2modelo-relatorio
+-removed date from abntex2modelo-relatorio
+-removed url from abntex2modelo
+-removed date from abntex2modelo
+-removed date from araujo2012
+-removed month from araujo2012
+-removed url from memoir
+-removed date from memoir
+-removed url from abntex2cite-alf
+-removed date from abntex2cite-alf
+-removed url from abntex2cite
+-removed date from abntex2cite
+-removed url from abntex2classe
+-removed date from abntex2classe
+-removed pages from NBR10520:2002
+-removed date from NBR10520:2002
+-removed month from NBR10520:2002
+-removed pages from NBR6024:2012
+-removed date from NBR6024:2012
+-removed month from NBR6024:2012
+-removed pages from NBR6028:2003
+-removed date from NBR6028:2003
+-removed month from NBR6028:2003
+-removed pages from NBR14724:2001
+-removed date from NBR14724:2001
+-removed month from NBR14724:2001
+-removed pages from NBR14724:2002
+-removed date from NBR14724:2002
+-removed month from NBR14724:2002
+-removed pages from NBR14724:2005
+-removed date from NBR14724:2005
+-removed month from NBR14724:2005
+-removed note from NBR14724:2011
+-removed pages from NBR14724:2011
+-removed date from NBR14724:2011
+-removed month from NBR14724:2011
+-removed date from van86
+-removed url from guizzardi2005
+-removed date from guizzardi2005
+-removed date from macedo2005
+-removed date from murillo
+-removed date from EIA649B
+-removed month from EIA649B
+-removed journal from masolo2010
+-removed url from masolo2010
+-removed pages from masolo2010
+-removed date from masolo2010
+-removed url from guarino1995
+-removed date from guarino1995
+-removed month from guarino1995
+-removed url from bates2010
+-removed date from bates2010
+-removed date from doxiadis1965
+-removed date from dewey1980
+-removed doi from Hou1994
+-removed issn from Hou1994
+-removed date from Hou1994
+-removed month from Hou1994
+-removed doi from Kwok:1999:SSA:344588.344618
+-removed issn from Kwok:1999:SSA:344588.344618
+-removed numpages from Kwok:1999:SSA:344588.344618
+-removed publisher from Kwok:1999:SSA:344588.344618
+-removed address from Kwok:1999:SSA:344588.344618
+-removed date from Kwok:1999:SSA:344588.344618
+-removed month from Kwok:1999:SSA:344588.344618
+-removed isbn from Goldberg:1989:GAS:534133
+-removed date from Goldberg:1989:GAS:534133
+-removed doi from Correa
+-removed issn from Correa
+-removed date from Correa
+-removed month from Correa
+-removed date from Kaur_heuristicsbased
+-removed doi from CHITRA20112725
+-removed issn from CHITRA20112725
+-removed note from CHITRA20112725
+-removed date from CHITRA20112725
+-removed doi from GONCALVES20081171
+-removed issn from GONCALVES20081171
+-removed note from GONCALVES20081171
+-removed url from GONCALVES20081171
+-removed date from GONCALVES20081171
+-removed doi from HWANG2008976
+-removed issn from HWANG2008976
+-removed note from HWANG2008976
+-removed date from HWANG2008976
+-removed doi from OMARA201013
+-removed issn from OMARA201013
+-removed note from OMARA201013
+-removed date from OMARA201013
+-removed doi from WANG19978
+-removed issn from WANG19978
+-removed note from WANG19978
+-removed date from WANG19978
+-removed doi from XU2014255
+-removed issn from XU2014255
+-removed note from XU2014255
+-removed date from XU2014255
+-removed doi from Alba:1999:SPD:315491.315495
+-removed issn from Alba:1999:SPD:315491.315495
+-removed numpages from Alba:1999:SPD:315491.315495
+-removed publisher from Alba:1999:SPD:315491.315495
+-removed address from Alba:1999:SPD:315491.315495
+-removed date from Alba:1999:SPD:315491.315495
+-removed month from Alba:1999:SPD:315491.315495
+-removed date from cantu1998survey
+-removed doi from Cantu-Paz2001
+-removed issn from Cantu-Paz2001
+-removed date from Cantu-Paz2001
+-removed month from Cantu-Paz2001
+-removed day from Cantu-Paz2001
+-Error on line 	journal={Genetic and Evolutionary Computation — GECCO 2003,
+. Trying again after utf-8 normalization
+Failed to extract data after normalization at line 	journal={Genetic and Evolutionary Computation — GECCO 2003,
+. Trying more generic capture
+Error matching camp data at 	journal={Genetic and Evolutionary Computation — GECCO 2003,
+
+-removed journal from Cantu-Paz2003
+-removed isbn from Cantu-Paz2003
+-removed pages from Cantu-Paz2003
+-removed date from Cantu-Paz2003
+-removed doi from COCHRAN20031087
+-removed issn from COCHRAN20031087
+-removed note from COCHRAN20031087
+-removed date from COCHRAN20031087
+-removed date from Gehring
+-removed month from Gehring
+-removed journal from Han
+-removed doi from Han
+-removed pages from Han
+-removed date from Han
+-removed doi from Kwok:1997:ESA:274066.274077
+-removed issn from Kwok:1997:ESA:274066.274077
+-removed numpages from Kwok:1997:ESA:274066.274077
+-removed publisher from Kwok:1997:ESA:274066.274077
+-removed address from Kwok:1997:ESA:274066.274077
+-removed date from Kwok:1997:ESA:274066.274077
+-removed month from Kwok:1997:ESA:274066.274077
+-removed journal from Morady
+-removed doi from Morady
+-removed pages from Morady
+-removed date from Morady
+-removed journal from Muhlenbein:1989:PGA:645512.657252
+-removed isbn from Muhlenbein:1989:PGA:645512.657252
+-removed numpages from Muhlenbein:1989:PGA:645512.657252
+-removed pages from Muhlenbein:1989:PGA:645512.657252
+-removed date from Muhlenbein:1989:PGA:645512.657252
+-removed doi from Muhlenbein:1991:PPG:1746086.1746158
+-removed issn from Muhlenbein:1991:PPG:1746086.1746158
+-removed numpages from Muhlenbein:1991:PPG:1746086.1746158
+-removed publisher from Muhlenbein:1991:PPG:1746086.1746158
+-removed address from Muhlenbein:1991:PPG:1746086.1746158
+-removed date from Muhlenbein:1991:PPG:1746086.1746158
+-removed month from Muhlenbein:1991:PPG:1746086.1746158
+-removed journal from Nowost
+-removed doi from Nowost
+-removed pages from Nowost
+-removed date from Nowost
+-removed doi from Qi2000
+-removed issn from Qi2000
+-removed date from Qi2000
+-removed month from Qi2000
+-removed day from Qi2000
+-removed issn from Srinivasa:2007:SMM:1279013.1279229
+-removed numpages from Srinivasa:2007:SMM:1279013.1279229
+-removed publisher from Srinivasa:2007:SMM:1279013.1279229
+-removed address from Srinivasa:2007:SMM:1279013.1279229
+-removed date from Srinivasa:2007:SMM:1279013.1279229
+-removed month from Srinivasa:2007:SMM:1279013.1279229
+-removed doi from Yao
+-removed issn from Yao
+-removed date from Yao
+-removed month from Yao
+-removed issn from olteanu
+-removed date from olteanu
+-removed date from jiang
+-removed month from jiang
+-removed doi from hypertool
+-removed issn from hypertool
+-removed date from hypertool
+-removed month from hypertool
+-removed date from fft
+-removed month from fft
+-removed doi from COSNARD1988275
+-removed issn from COSNARD1988275
+-removed date from COSNARD1988275
+-removed doi from Feo1995
+-removed issn from Feo1995
+-removed date from Feo1995
+-removed month from Feo1995
+-removed day from Feo1995
+-removed doi from MLADENOVIC19971097
+-removed issn from MLADENOVIC19971097
+-removed date from MLADENOVIC19971097
+-removed doi from Glover1999
+-removed isbn from Glover1999
+-removed date from Glover1999
+Removed abntex2-wiki-como-customizar
+Removed talbot2012
+Removed babel
+Removed abntex2modelo-artigo
+Removed abntex2modelo-relatorio
+Removed abntex2modelo
+Removed araujo2012
+Removed memoir
+Removed abntex2cite-alf
+Removed abntex2cite
+Removed abntex2classe
+Removed NBR10520:2002
+Removed NBR6024:2012
+Removed NBR6028:2003
+Removed NBR14724:2001
+Removed NBR14724:2002
+Removed NBR14724:2005
+Removed NBR14724:2011
+Removed van86
+Removed guizzardi2005
+Removed macedo2005
+Removed EIA649B
+Removed masolo2010
+Removed guarino1995
+Removed bates2010
+Removed doxiadis1965
+Removed dewey1980
+Removed Kwok:1999:SSA:344588.344618
+Removed GONCALVES20081171
+Removed HWANG2008976
+Removed Alba:1999:SPD:315491.315495
+Removed Cantu-Paz2001
+Removed Cantu-Paz2003
+Removed COCHRAN20031087
+Removed Kwok:1997:ESA:274066.274077
+Removed Muhlenbein:1989:PGA:645512.657252
+Removed Muhlenbein:1991:PPG:1746086.1746158
+Removed Nowost
+Removed Srinivasa:2007:SMM:1279013.1279229
