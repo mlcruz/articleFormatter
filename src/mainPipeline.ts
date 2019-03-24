@@ -6,7 +6,8 @@ import { removeGraphStep } from "./steps/removeGraphStep";
 import { filterCampsStep } from "./steps/filterCampsStep";
 import { writingStep } from "./steps/writingStep";
 import { templateUfrgsString, localeString } from "./steps/allowedTypes";
-import { normalize } from "./infrastructure/normalize";
+import { normalize } from "./steps/normalize";
+import { normalizeStep } from "./steps/normalizeStep";
 
 export function mainPipeline(
   bib?: string,
@@ -30,7 +31,7 @@ export function mainPipeline(
   const _shortWords = fs.readFileSync(__dirname + `/${shortWords}`, "utf8");
 
   //Bibliography file
-  const _bib = fs.readFileSync(__dirname + `/${bib}`, "utf8");
+  let _bib = fs.readFileSync(__dirname + `/${bib}`, "utf8");
 
   //Tex file
   const _tex: string = fs.readFileSync(__dirname + `/${tex}`, "utf8");
@@ -43,9 +44,8 @@ export function mainPipeline(
   //Output bib file
   const _newBib = __dirname + "/bib1/outbib.bib";
 
-  normalizeStep(_bib);
-
   //Bibtex object initialization
+  _bib = normalizeStep(_bib);
   const bibTexBib = new cite(_bib);
 
   //Main pipeline object, resulting from a json parsing on the bibTex object.
@@ -65,6 +65,6 @@ export function mainPipeline(
   jsonBib = abbreviateStep(jsonBib, _ltwa, _shortWords);
 
   //filterCampsStep(jsonBib);
-  console.log(jsonBib);
+  //console.log(jsonBib);
   writingStep(jsonBib, _newBib);
 }

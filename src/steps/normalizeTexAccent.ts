@@ -1,4 +1,4 @@
-function normalizeTexAccent(s: string) {
+export function normalizeTexAccent(s: string) {
   const reg = /\{\\'{(\w)/g;
   const matches = reg.exec(s);
   if (matches) {

@@ -1,10 +1,13 @@
+import { normalize } from "./normalize";
+
 // tslint:disable-next-line: no-any
-export function nomalizeStep(jsonBib: any) {
-  const returnObject: object[] = [];
+export function normalizeStep(bib: string) {
+  let returnObject = "";
+  const bibSplit = bib.split("\n");
   // tslint:disable-next-line: no-any
-  jsonBib.forEach((element: any) => {
-    element["_graph"] = null;
-    returnObject.push(element);
+  bibSplit.forEach((element: string) => {
+    returnObject = returnObject + normalize(element) + "\n";
   });
+
   return returnObject;
 }
