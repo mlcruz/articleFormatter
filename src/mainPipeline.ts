@@ -12,15 +12,13 @@ import { normalizeStep } from "./steps/normalizeStep";
 export function mainPipeline(
   bib?: string,
   tex?: string,
-  shortWords?: string,
   ltwa?: string,
-  newTex?: string,
-  newBib?: string
+  shortWords?: string,
+  newBib?: string,
+  newTex?: string
 ): void {
   ltwa = ltwa || "tableData.csv";
   shortWords = shortWords || "shortwords.txt";
-  bib = bib || "bib1/referencias.bib";
-  tex = tex || "bib1/rita.tex";
   const templateSRC = "templates/ufrgs.csl";
   const ptBRlocale = "locales/pt-br.xml";
 
@@ -42,7 +40,9 @@ export function mainPipeline(
   const ptBRLocale = fs.readFileSync(__dirname + `/${ptBRlocale}`, "utf8");
 
   //Output bib file
-  const _newBib = __dirname + "/bib1/outbib.bib";
+  const _newBib = newBib
+    ? __dirname + "/" + newBib
+    : __dirname + "/outfile.bib";
 
   //Bibtex object initialization
   _bib = normalizeStep(_bib);
