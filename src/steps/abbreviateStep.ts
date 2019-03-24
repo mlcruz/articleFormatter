@@ -14,7 +14,7 @@ export function abbreviateStep(jsonBib: any, ltwa: string, shortWords: string) {
               element["container-title"]
             ))
           : console.log(
-              "abbreviateStep -> null journal title on abbreviatable" +
+              "abbreviateStep -> null journal title on abbreviatable " +
                 element["id"]
             );
         break;
