@@ -27,3 +27,6 @@ Implementation:
   -funcionalities definied by steps, easily expandaded
   
   
+  
+  Uses [abbrevIso](https://github.com/marcinwrochna/abbrevIso) to abbreviate titles
+  
