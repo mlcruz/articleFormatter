@@ -2,7 +2,7 @@
 
 
 
-CLI app to help format bibTex files. 
+CLI app to help formatting bibTex files. 
 
 Funcionalities:
 
