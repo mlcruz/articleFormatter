@@ -23,6 +23,5 @@ export function abbreviateStep(jsonBib: any, ltwa: string, shortWords: string) {
     }
     returnObject.push(element);
   });
-  console.log(returnObject);
   return returnObject;
 }

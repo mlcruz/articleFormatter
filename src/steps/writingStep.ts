@@ -5,12 +5,8 @@ import { templateUfrgsString, localeString } from "./allowedTypes";
 export function writingStep(jsonBib: any, newBib: string) {
   //Pipeline writing step
   const outJson = new cite(jsonBib);
-  const outFile = outJson.format("bibtex", {
-    format: "object",
-    template: templateUfrgsString,
-    lang: localeString
-  });
-  fs.writeFile(__dirname + `/${newBib}`, outFile, err => {
+  const outFile = outJson.format("bibtex", { template: "apa" });
+  fs.writeFile(newBib, outFile, err => {
     if (err) {
       return console.log(err);
     }

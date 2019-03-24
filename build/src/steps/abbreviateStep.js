@@ -20,7 +20,6 @@ function abbreviateStep(jsonBib, ltwa, shortWords) {
         }
         returnObject.push(element);
     });
-    console.log(returnObject);
     return returnObject;
 }
 exports.abbreviateStep = abbreviateStep;
