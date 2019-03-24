@@ -64,7 +64,8 @@ export function mainPipeline(
   //Abreviates journal citations
   jsonBib = abbreviateStep(jsonBib, _ltwa, _shortWords);
 
-  //filterCampsStep(jsonBib);
+  jsonBib = filterCampsStep(jsonBib);
+
   //console.log(jsonBib);
   writingStep(jsonBib, _newBib);
 }

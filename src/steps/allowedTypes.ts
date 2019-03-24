@@ -4,31 +4,39 @@ export const localeString = "ptBR";
 export const typeArticle = [
   "author",
   "title",
-  "journal",
-  "year",
-  "number",
-  "pages",
-  "volume"
+  "issue",
+  "page",
+  "volume",
+  "type",
+  "issued",
+  "container-title",
+  "citation-label",
+  "id"
 ];
+
 export const typeBook = [
-  "author",
   "title",
   "publisher",
-  "year",
+  "author",
+  "issued",
+  "edition",
   "volume",
-  "series",
-  "address",
-  "edition"
+  "collection-title",
+  "publisher-place",
+  "type",
+  "year-suffix",
+  "id",
+  "citation-label"
 ];
 export const typeConference = [
   "author",
   "title",
-  "year",
+  "issued",
   "editor",
   "volume",
   "series",
   "pages",
-  "address",
+  "publisher-place",
   "publisher"
 ];
 export const typeInbook = [
@@ -37,10 +45,10 @@ export const typeInbook = [
   "chapter",
   "pages",
   "publisher",
-  "year",
+  "issued",
   "volume",
   "series",
-  "address",
+  "publisher-place",
   "edition"
 ];
 export const typeIncollection = [
@@ -48,50 +56,59 @@ export const typeIncollection = [
   "title",
   "booktitle",
   "publisher",
-  "year",
+  "issued",
   "editor",
   "volume",
   "series",
   "chapter",
   "pages",
-  "address",
+  "publisher-place",
   "edition"
 ];
 export const typeManual = [
   "title",
   "author",
   "organization",
-  "address",
+  "publisher-place",
   "edition",
   "month",
-  "year"
+  "issued"
 ];
 export const typeMastersThesis = [
   "title",
   "author",
   "school",
-  "year",
-  "address"
+  "issued",
+  "publisher-place"
 ];
 export const typeMisc = [
   "author",
   "title",
   "howpublished",
   "month",
-  "year",
+  "issued",
   "note",
   "url"
 ];
-export const typePhdthesis = ["author", "title", "school", "year", "address"];
+export const typePhdthesis = [
+  "author",
+  "title",
+  "school",
+  "issued",
+  "type",
+  "id",
+  "citation-label",
+  "publisher-place"
+];
 export const typeProceedings = [
   "author",
   "booktitle",
   "title",
-  "year",
+  "issued",
   "editor",
   "volume",
   "series",
-  "address",
+  "publisher-place",
   "month",
   "organization",
   "publisher"
@@ -100,11 +117,11 @@ export const typeInproceedings = [
   "author",
   "booktitle",
   "title",
-  "year",
+  "issued",
   "editor",
   "volume",
   "series",
-  "address",
+  "publisher-place",
   "month",
   "organization",
   "publisher"
@@ -113,17 +130,20 @@ export const typeTechreport = [
   "author",
   "title",
   "institution",
-  "year",
-  "number",
-  "address"
+  "issued",
+  "issue",
+  "publisher-place"
 ];
 export const typeReport = [
-  "author",
   "title",
-  "institution",
-  "year",
-  "number",
-  "address"
+  "author",
+  "issued",
+  "issue",
+  "publisher",
+  "type",
+  "citation-label",
+  "id",
+  "note"
 ];
-export const typeUnpublished = ["author", "title", "note", "month", "year"];
-export const typeOnline = ["author", "title", "year", "url"];
+export const typeUnpublished = ["author", "title", "note", "month", "issued"];
+export const typeOnline = ["author", "title", "issued", "url"];
