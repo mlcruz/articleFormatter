@@ -21,6 +21,7 @@ Funcionalities:
 -Usually works
 
 Implementation:
+
   -simple pipeline running a list of transformations on a json file representing a bib file
   
   -funcionalities definied by steps, easily expandaded
