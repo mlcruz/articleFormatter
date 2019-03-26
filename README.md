@@ -18,7 +18,7 @@ Funcionalities:
 
 -Abbreviates journal titles
 
--Usually works
+-Deals with common formatation errors
 
 Implementation:
 
@@ -26,6 +26,7 @@ Implementation:
   
   -funcionalities definied by steps, easily expandaded
   
+ 
   
   
   Uses [abbrevIso](https://github.com/marcinwrochna/abbrevIso) to abbreviate titles
