@@ -57,13 +57,13 @@
   
   Running the formatter (assuming you are at the /build/src folder containing the js files): `node formatBib -t [tex file location] -b [bib file location] `. 
   
-  Options:
-    set tex input file location (required) - `-t [input file location]` 
-    set bib input file location (required) - `-b [input file location]` 
-    set output file location (optional, default is outbib.bib) `-o [output file location]`
-    set LTWA table data location (optional, current folder) `-l [input file location]`
-    set shortwords data location (optional, current folder) `-l [input file location]`
-    help: `--help`
+   1. Options:
+   *   set tex input file location (required) - `-t [input file location]` 
+   *  set bib input file location (required) - `-b [input file location]` 
+   *   set output file location (optional, default is outbib.bib) `-o [output file location]`
+   *   set LTWA table data location (optional, current folder) `-l [input file location]`
+   *   set shortwords data location (optional, current folder) `-l [input file location]`
+   *   help: `--help`
     
  You can also install ts-node to run the source typescript files at /src
 
