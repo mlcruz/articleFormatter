@@ -30,7 +30,9 @@
   You can use either yarn or npm to manage your packages. For this tutorial, we are going to use yarn
   
   ##### Windows:
-
+  
+   open the command prompy as admin and follow the steps:
+ 
   1. install nodejs
   * with chocolatey: `choco install nodejs`
   
