@@ -66,7 +66,7 @@
   
 #### Usage:
   
-  articleFormatter assumes that the bibliography is valid bibTeX w/o comments file and has no syntax errors (for now!). Most errors are related to some bibTex error (ex: not ending a block with a }, or missing a comma somewhere )
+  articleFormatter assumes that the bibliography is valid bibTeX file and has no syntax errors (for now!). Most errors are related to some bibTex error (ex: not ending a block with a }, or missing a comma somewhere )
 
   Built files can be found at $RootFolder$/build/src. 
   
