@@ -96,6 +96,8 @@
 
 2. Error: `Syntax Error: Unexpected token at index $Offset$ : Expected $Token$, got % ` => A comment is messing things up somewhere. Probably fixed by now
 
+3. Error : `SyntaxError: Unexpected token at index 0: Expected "@", got "%"` => First line in the file is a comment.
+
 ### Implementation:
 
   * simple pipeline running a list of transformations on a json file representing a bib file
