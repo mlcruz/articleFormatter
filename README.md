@@ -92,7 +92,9 @@
   
 ### FAQ:
 
-1. Error :Unexpected token at index $Offset$ => Something is badly formated. Use notepad++ or something similar and goto to the reported character offset and fix the erro
+1. Error : `Unexpected token at index $Offset$` => Something is badly formated. Use notepad++ or something similar and goto to the reported character offset and fix the error
+
+2. Error: `Syntax Error: Unexpected token at index $Offset$ : Expected $Token$, got % ` => A comment is messing things up somewhere. Probably fixed by now
 
 ### Implementation:
 
