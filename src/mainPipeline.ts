@@ -19,8 +19,6 @@ export function mainPipeline(
 ): void {
   ltwa = ltwa || "tableData.csv";
   shortWords = shortWords || "shortwords.txt";
-  const templateSRC = "templates/ufrgs.csl";
-  const ptBRlocale = "locales/pt-br.xml";
 
   // Initializes abbreviation table data
   const _ltwa = fs.readFileSync(__dirname + `/${ltwa}`, "utf8");
@@ -33,11 +31,6 @@ export function mainPipeline(
 
   //Tex file
   const _tex: string = fs.readFileSync(__dirname + `/${tex}`, "utf8");
-
-  //Template UFRGS
-  const templateUfrgs = fs.readFileSync(__dirname + `/${templateSRC}`, "utf8");
-
-  const ptBRLocale = fs.readFileSync(__dirname + `/${ptBRlocale}`, "utf8");
 
   //Output bib file
   const _newBib = newBib

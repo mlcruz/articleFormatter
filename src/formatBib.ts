@@ -2,9 +2,6 @@ import commander = require("commander");
 import { mainPipeline } from "./mainPipeline";
 const program = require("commander");
 
-const bib = "bib1/bib/library.bib";
-const tex = "bib1/bib/main.tex";
-
 program
   .version("0.1.0")
   .option("-t, --tex [Tex Input File]", "tex file location")
