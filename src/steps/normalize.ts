@@ -5,6 +5,7 @@ export function normalize(s: string) {
   s = s.replace(/^\s*\w+\s*=\s*{\s*}\s*\S*[^}]/, ""); // camp={} fields
   s = s.replace(/[^\\]%.*$/, ""); //Comment fields
   s = s.replace(/\$\\backslash\$/, "\\");
+  s = s.replace(/^\s*% Encoding:.*$/, "");
   s.replace(/\u00DF/g, "ss")
     .replace(/\u1E9E/g, "SS") // scharfes S
     .replace(/\u0111/g, "d")
