@@ -92,7 +92,7 @@
   
 ### FAQ:
 
-1)Error :Unexpected token at index $Offset$ => Something is badly formated. Use notepad++ or something similar and goto to the reported character offset and fix the erro
+1. Error :Unexpected token at index $Offset$ => Something is badly formated. Use notepad++ or something similar and goto to the reported character offset and fix the erro
 
 ### Implementation:
 
