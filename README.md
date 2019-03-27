@@ -114,9 +114,9 @@
   
   * very loosely/badly typed
   
-  Uses [abbrevIso](https://github.com/marcinwrochna/abbrevIso) to abbreviate titles
+  * Uses [abbrevIso](https://github.com/marcinwrochna/abbrevIso) to abbreviate titles
   
-  Uses [Citation.js](https://citation.js.org/) to convert bibTex to JSON
+  * Uses [Citation.js](https://citation.js.org/) to convert bibTex to JSON
 
 
   
