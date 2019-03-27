@@ -1,5 +1,23 @@
 # articleFormatter
 
+## CLI app to help formatting bibTex files. 
+
+### Funcionalities:
+
+* Formats and indents file
+
+* Normalizes non-standard characters
+
+* Removes uncited citations from bib file
+
+* Filters unwanted fields from citations (ex: notes and urls)
+
+* Populates missing fields with a tag to make it explicit
+
+* Abbreviates journal titles
+
+* Deals with common formatation errors
+
 
 ## Instalation and usage
  
@@ -70,35 +88,17 @@
 ### Compiling
   run `tsc` at root
 
-
-## Features
-
-CLI app to help formatting bibTex files. 
-
-Funcionalities:
-
--Formats and indents file
-
--Normalizes non-standard characters
-
--Removes uncited citations from bib file
-
--Filters unwanted fields from citations (ex: notes and urls)
-
--Populates missing fields with a tag to make it explicit
-
--Abbreviates journal titles
-
--Deals with common formatation errors
-
-Implementation:
+### Implementation:
 
   -simple pipeline running a list of transformations on a json file representing a bib file
   
   -funcionalities definied by steps, easily expandaded
   
- 
-  
-  
   Uses [abbrevIso](https://github.com/marcinwrochna/abbrevIso) to abbreviate titles
+  
+  Uses [Citation.js](https://citation.js.org/) to convert bibTex to JSON
+
+
+  
+  
   
