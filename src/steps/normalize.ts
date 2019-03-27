@@ -3,6 +3,7 @@ import { normalizeTexAccent } from "./normalizeTexAccent";
 export function normalize(s: string) {
   s = normalizeTexAccent(s);
   s = s.replace(/^\s*\w+\s*=\s*{\s*}\s*\S*[^}]/, ""); // camp={} fields
+  s = s.replace(/%.*$/, ""); //Comment fields
   s.replace(/\u00DF/g, "ss")
     .replace(/\u1E9E/g, "SS") // scharfes S
     .replace(/\u0111/g, "d")
