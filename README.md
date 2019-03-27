@@ -16,6 +16,8 @@
 
 * Abbreviates journal titles
 
+* Removes comments
+
 * Deals with common formatation errors
 
 
@@ -105,6 +107,12 @@
   * simple pipeline running a list of transformations on a json file representing a bib file
   
   * funcionalities definied by steps, easily expandaded
+  
+  * filters definied @ steps/allowedTypes and steps/filterCamptsStep
+  
+  * normalization rules @ steps/normalize
+  
+  * very loosely/badly typed
   
   Uses [abbrevIso](https://github.com/marcinwrochna/abbrevIso) to abbreviate titles
   
