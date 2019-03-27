@@ -92,9 +92,9 @@
 
 ### Implementation:
 
-  -simple pipeline running a list of transformations on a json file representing a bib file
+  * simple pipeline running a list of transformations on a json file representing a bib file
   
-  -funcionalities definied by steps, easily expandaded
+  * funcionalities definied by steps, easily expandaded
   
   Uses [abbrevIso](https://github.com/marcinwrochna/abbrevIso) to abbreviate titles
   
