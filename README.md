@@ -113,7 +113,7 @@ Some commom errors:
 
   * simple pipeline running a list of transformations on a json file representing a bib file
   
-  * funcionalities definied by steps, easily expandaded
+  * funcionalities definied by steps, easily expanded
   
   * filters definied @ steps/allowedTypes and steps/filterCamptsStep
   
