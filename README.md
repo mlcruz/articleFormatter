@@ -31,7 +31,7 @@
   
   You can use either yarn or npm to manage your packages. For this tutorial, we are going to use yarn.
   
-  This project used Visual Studio Code + extensions (Tslint, prettier) for its development, and has some style rules already    defined. 
+  This project used Visual Studio Code + extensions (Tslint, prettier) for its development, and has some style rules already    defined. I just opened the project folder with vscode and implemented stuff, so i don't know if the folder structure is going to make it annoying if you are using something else.
   
   ##### Windows:
   
@@ -96,10 +96,8 @@ Most errors are related to some bibTex error (ex: not ending a block with a }, o
  You can also install ts-node to run the source typescript files at /src
 
 ### Compiling
-  run `tsc` at root
-  
-  
-  
+  run `tsc` at root. 
+ 
 ### FAQ:
 
 Some commom errors:
