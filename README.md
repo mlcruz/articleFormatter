@@ -25,7 +25,7 @@
  
 ### Simple Instalation Guide:
   
-  If you are using windows, you are going to need [chocolatey](https://chocolatey.org/install) for this tutorial.
+  If you are using windows,[chocolatey](https://chocolatey.org/install) is needed for this tutorial.
   
   #### Prerequisites
   
