@@ -29,7 +29,9 @@
   
   #### Prerequisites
   
-  You can use either yarn or npm to manage your packages. For this tutorial, we are going to use yarn
+  You can use either yarn or npm to manage your packages. For this tutorial, we are going to use yarn.
+  
+  This project used Visual Studio Code + extensions (Tslint, prettier) for its development, and has some style rules already    defined. 
   
   ##### Windows:
   
@@ -95,6 +97,8 @@ Most errors are related to some bibTex error (ex: not ending a block with a }, o
 
 ### Compiling
   run `tsc` at root
+  
+  
   
 ### FAQ:
 
