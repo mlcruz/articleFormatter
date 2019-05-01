@@ -16,6 +16,8 @@
 
 * Abbreviates journal titles
 
+* Removes comments
+
 * Deals with common formatation errors
 
 
@@ -23,11 +25,13 @@
  
 ### Simple Instalation Guide:
   
-  If you are using windows, you are going to need [chocolatey](https://chocolatey.org/install) for this tutorial.
+  If you are using windows,[chocolatey](https://chocolatey.org/install) is needed for this tutorial.
   
   #### Prerequisites
   
-  You can use either yarn or npm to manage your packages. For this tutorial, we are going to use yarn
+  You can use either yarn or npm to manage your packages. For this tutorial, we are going to use yarn.
+  
+  This project used Visual Studio Code + extensions (Tslint, prettier) for its development, and has some style rules already    defined. I just opened the project folder with vscode and implemented stuff, so i don't know if the folder structure is going to make it annoying if you are using something else.
   
   ##### Windows:
   
@@ -54,6 +58,8 @@
    
      curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
      echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+     sudo apt update
+     sudo apt install yarn
      
    3. typescript compiler (if you want to compile the project)
    `  yarn global add typescript`
@@ -66,7 +72,9 @@
   
 #### Usage:
   
-  articleFormatter assumes that the bibliography is valid bibTeX file and has no syntax errors (for now!). Most errors are related to some bibTex error (ex: not ending a block with a }, or missing a comma somewhere ). Reading the error msg and using a text editor program to go to the error offset should be able to fix most issues with badly formated files
+This program assumes that the bibliography is valid bibTeX file and has no syntax errors. 
+
+Most errors are related to some bibTex error (ex: not ending a block with a }, or missing a comma somewhere ). Reading the error msg and using something like notepad++ to go to the error char offset should be able to fix most issues with badly formated input files
 
   Built files can be found at $RootFolder$/build/src. 
   
@@ -77,7 +85,7 @@
   
   Running the formatter (assuming you are at the /build/src folder containing the js files): `node formatBib -t [tex file location] -b [bib file location] `. 
   
-   1. Options:
+   Options:
    *   set tex input file location (required) - `-t [input file location]` 
    *  set bib input file location (required) - `-b [input file location]` 
    *   set output file location (optional, default is outbib.bib) `-o [output file location]`
@@ -88,9 +96,11 @@
  You can also install ts-node to run the source typescript files at /src
 
 ### Compiling
-  run `tsc` at root
-  
+  run `tsc` at root. 
+ 
 ### FAQ:
+
+Some commom errors:
 
 1. Error : `Unexpected token at index $Offset$` => Something is badly formated. Use notepad++ or something similar and goto to the reported character offset and fix the error
 
@@ -104,9 +114,15 @@
   
   * funcionalities definied by steps, easily expandaded
   
-  Uses [abbrevIso](https://github.com/marcinwrochna/abbrevIso) to abbreviate titles
+  * filters definied @ steps/allowedTypes and steps/filterCamptsStep
   
-  Uses [Citation.js](https://citation.js.org/) to convert bibTex to JSON
+  * normalization rules @ steps/normalize
+  
+  * very loosely/badly typed
+  
+  * Uses [abbrevIso](https://github.com/marcinwrochna/abbrevIso) to abbreviate titles
+  
+  * Uses [Citation.js](https://citation.js.org/) to convert bibTex to JSON
 
 
   
