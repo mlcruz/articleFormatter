@@ -77,7 +77,8 @@ This program assumes that the bibliography is valid bibTeX file and has no synta
 Most errors are related to some bibTex error (ex: not ending a block with a }, or missing a comma somewhere ). Reading the error msg and using something like notepad++ to go to the error char offset should be able to fix most issues with badly formated input files
   
   Source files can be fount at /src
-  Built files can be found /build/src. 
+  
+  Built files can be found /build/src
   
   Important files (can be found in root for src/build files):
   1.  tableData.csv (LTWA abreviations data)
