@@ -1,3 +1,4 @@
+// Allowed types
 import {
   typeArticle,
   typeBook,
@@ -6,14 +7,16 @@ import {
   typeReport,
   typeInbook
 } from "./allowedTypes";
-import { stringify } from "querystring";
+
+
+// Filters unallowed filds from citations, depending on its type
 
 // tslint:disable-next-line: no-any
 export function filterCampsStep(jsonBib: any) {
   const returnObject: object[] = [];
   // tslint:disable-next-line: no-any
 
-  // To add new allowed types, just edit the object below
+  // To add new allowed types, edit the allowedTypes file and then add it to the object below.
   // tslint:disable-next-line: no-any
   const allowedTypes: any = {
     "article-journal": typeArticle,
@@ -25,13 +28,10 @@ export function filterCampsStep(jsonBib: any) {
   };
   const allowedTypesSet = new Set(Object.keys(allowedTypes));
 
-  // tslint:disable-next-line: no-any
   jsonBib.forEach((element: any) => {
-    // tslint:disable-next-line: no-any
     let newElement: any = new Object();
     if (allowedTypesSet.has(element["type"])) {
       allowedTypes[element["type"]].forEach((allowedType: string) => {
-        // tslint:disable-next-line: no-any
         element[allowedType]
           ? (newElement[allowedType] = element[allowedType])
           : (newElement[allowedType] = "N/A");

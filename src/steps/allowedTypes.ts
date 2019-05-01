@@ -1,5 +1,9 @@
-export const templateUfrgsString = "templateUfrgs";
-export const localeString = "ptBR";
+// TODO: use standart template files for abbreviation styling
+// export const templateUfrgsString = "templateUfrgs";
+// export const localeString = "ptBR";
+
+
+// This file lists the allowed citation fields for each citation. Any field not listed in its type is removed on the filtering step 
 
 export const typeArticle = [
   "author",
@@ -83,7 +87,8 @@ export const typePhdthesis = [
   "publisher-place"
 ];
 
-//Old ununsed types for reference:
+// Old types for reference:
+
 
 // export const typeIncollection = [
 //   "author",

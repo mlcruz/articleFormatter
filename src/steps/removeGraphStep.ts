@@ -1,7 +1,5 @@
-// tslint:disable-next-line: no-any
 export function removeGraphStep(jsonBib: any) {
   const returnObject: object[] = [];
-  // tslint:disable-next-line: no-any
   jsonBib.forEach((element: any) => {
     element["_graph"] = null;
     returnObject.push(element);

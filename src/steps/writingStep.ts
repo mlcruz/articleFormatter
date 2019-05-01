@@ -1,7 +1,5 @@
 import fs = require("fs");
 import cite = require("citation-js");
-import { templateUfrgsString, localeString } from "./allowedTypes";
-// tslint:disable-next-line: no-any
 export function writingStep(jsonBib: any, newBib: string) {
   //Pipeline writing step
   const outJson = new cite(jsonBib);

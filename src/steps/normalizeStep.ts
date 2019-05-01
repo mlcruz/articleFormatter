@@ -1,10 +1,9 @@
 import { normalize } from "./normalize";
 
-// tslint:disable-next-line: no-any
+// Normalizes the raw input file before json-ing the object
 export function normalizeStep(bib: string) {
   let returnObject = "";
   const bibSplit = bib.split("\n");
-  // tslint:disable-next-line: no-any
   bibSplit.forEach((element: string) => {
     returnObject = returnObject + normalize(element) + "\n";
   });
