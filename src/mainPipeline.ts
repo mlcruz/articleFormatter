@@ -5,8 +5,6 @@ import { abbreviateStep } from "./steps/abbreviateStep";
 import { removeGraphStep } from "./steps/removeGraphStep";
 import { filterCampsStep } from "./steps/filterCampsStep";
 import { writingStep } from "./steps/writingStep";
-import { templateUfrgsString, localeString } from "./steps/allowedTypes";
-import { normalize } from "./steps/normalize";
 import { normalizeStep } from "./steps/normalizeStep";
 
 export function mainPipeline(
@@ -48,15 +46,16 @@ export function mainPipeline(
     format: "object"
   });
 
-  //Remove dependency graph
+  // Remove dependency graph
   jsonBib = removeGraphStep(jsonBib);
 
-  //Remove uncited references from bib file
+  // Remove uncited references from bib file
   jsonBib = removeUncitedStep(jsonBib, _tex);
 
-  //Abreviates journal citations
+  // Abreviates journal citations
   jsonBib = abbreviateStep(jsonBib, _ltwa, _shortWords);
 
+  // Removes unallowed camps
   jsonBib = filterCampsStep(jsonBib);
 
   //console.log(jsonBib);

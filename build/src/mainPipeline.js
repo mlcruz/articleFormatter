@@ -32,12 +32,13 @@ function mainPipeline(bib, tex, ltwa, shortWords, newBib, newTex) {
     let jsonBib = bibTexBib.format("data", {
         format: "object"
     });
-    //Remove dependency graph
+    // Remove dependency graph
     jsonBib = removeGraphStep_1.removeGraphStep(jsonBib);
-    //Remove uncited references from bib file
+    // Remove uncited references from bib file
     jsonBib = removeUncitedStep_1.removeUncitedStep(jsonBib, _tex);
-    //Abreviates journal citations
+    // Abreviates journal citations
     jsonBib = abbreviateStep_1.abbreviateStep(jsonBib, _ltwa, _shortWords);
+    // Removes unallowed camps
     jsonBib = filterCampsStep_1.filterCampsStep(jsonBib);
     //console.log(jsonBib);
     writingStep_1.writingStep(jsonBib, _newBib);

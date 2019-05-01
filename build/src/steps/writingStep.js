@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs = require("fs");
 const cite = require("citation-js");
-// tslint:disable-next-line: no-any
+// Writes output file
 function writingStep(jsonBib, newBib) {
     //Pipeline writing step
     const outJson = new cite(jsonBib);

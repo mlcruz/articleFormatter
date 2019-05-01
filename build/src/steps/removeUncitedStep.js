@@ -1,6 +1,6 @@
 "use strict";
+// Remove bibliography entries not used in the tex file
 Object.defineProperty(exports, "__esModule", { value: true });
-// tslint:disable-next-line: no-any
 function removeUncitedStep(jsonBib, tex) {
     const arr = [];
     const returnObject = [];
@@ -15,7 +15,6 @@ function removeUncitedStep(jsonBib, tex) {
         })
         : console.log("removeUncitedStep - null matches");
     const citedSet = new Set(arr);
-    // tslint:disable-next-line: no-any
     jsonBib.forEach((element) => {
         element["_graph"] = null;
         if (citedSet.has(element["id"])) {

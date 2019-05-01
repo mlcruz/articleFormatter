@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const normalizeTexAccent_1 = require("./normalizeTexAccent");
+// Normalizes strings so it can be processed by the bib to json function. Probably at some point someone is going
+// use a character  that breaks everything and you are going to need to add it to this function
 function normalize(s) {
     s = normalizeTexAccent_1.normalizeTexAccent(s);
     s = s.replace(/^\s*\w+\s*=\s*{\s*}\s*\S*[^}]/, ""); // camp={} fields
@@ -32,6 +34,7 @@ function normalize(s) {
     // Most diacritics are handled by this standard unicode normalization:
     // it decomposes characters into simpler characters plus modifiers,
     // and throws out the modifiers.
+    // You might want to uncomment the next 2 lines if you want to remove every single accent and weird character in a file. Use with care 
     //.normalize("NFKD")
     //.replace(/[\u0300-\u036f]/gu, "")
     return s;

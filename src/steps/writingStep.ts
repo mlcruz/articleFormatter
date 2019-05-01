@@ -1,5 +1,7 @@
 import fs = require("fs");
 import cite = require("citation-js");
+
+// Writes output file
 export function writingStep(jsonBib: any, newBib: string) {
   //Pipeline writing step
   const outJson = new cite(jsonBib);

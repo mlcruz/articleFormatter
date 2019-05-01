@@ -1,3 +1,5 @@
+// Normalize Tex ({'o}) style accentuation
+
 export function normalizeTexAccent(s: string) {
   const reg = /\{\\'{(\w)/g;
   const matches = reg.exec(s);

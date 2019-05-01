@@ -1,12 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+// Allowed types
 const allowedTypes_1 = require("./allowedTypes");
-// tslint:disable-next-line: no-any
+// Filters unallowed filds from citations, depending on its type
 function filterCampsStep(jsonBib) {
     const returnObject = [];
-    // tslint:disable-next-line: no-any
-    // To add new allowed types, just edit the object below
-    // tslint:disable-next-line: no-any
+    // To add new allowed types, edit the allowedTypes file and then add it to the object below.
     const allowedTypes = {
         "article-journal": allowedTypes_1.typeArticle,
         book: allowedTypes_1.typeBook,
@@ -16,13 +15,10 @@ function filterCampsStep(jsonBib) {
         report: allowedTypes_1.typeReport
     };
     const allowedTypesSet = new Set(Object.keys(allowedTypes));
-    // tslint:disable-next-line: no-any
     jsonBib.forEach((element) => {
-        // tslint:disable-next-line: no-any
         let newElement = new Object();
         if (allowedTypesSet.has(element["type"])) {
             allowedTypes[element["type"]].forEach((allowedType) => {
-                // tslint:disable-next-line: no-any
                 element[allowedType]
                     ? (newElement[allowedType] = element[allowedType])
                     : (newElement[allowedType] = "N/A");

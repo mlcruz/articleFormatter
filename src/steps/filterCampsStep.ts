@@ -8,16 +8,12 @@ import {
   typeInbook
 } from "./allowedTypes";
 
-
 // Filters unallowed filds from citations, depending on its type
 
-// tslint:disable-next-line: no-any
 export function filterCampsStep(jsonBib: any) {
   const returnObject: object[] = [];
-  // tslint:disable-next-line: no-any
 
   // To add new allowed types, edit the allowedTypes file and then add it to the object below.
-  // tslint:disable-next-line: no-any
   const allowedTypes: any = {
     "article-journal": typeArticle,
     book: typeBook,

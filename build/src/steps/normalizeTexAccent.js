@@ -1,4 +1,5 @@
 "use strict";
+// Normalize Tex ({'o}) style accentuation
 Object.defineProperty(exports, "__esModule", { value: true });
 function normalizeTexAccent(s) {
     const reg = /\{\\'{(\w)/g;
