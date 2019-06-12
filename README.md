@@ -104,11 +104,13 @@ Most errors are related to some bibTex error (ex: not ending a block with a }, o
 
 Some commom errors:
 
-1. Error : `Unexpected token at index $Offset$` => Something is badly formated. Use notepad++ or something similar and goto to the reported character offset and fix the error
+1. Error : `Unexpected token at index $Offset` => Something is badly formated. Use notepad++ or something similar and goto to the reported character offset and fix the error
 
-2. Error: `Syntax Error: Unexpected token at index $Offset$ : Expected $Token$, got % ` => A comment is messing things up somewhere. Probably fixed by now
+2. Error: `Syntax Error: Unexpected token at index $Offset : Expected $Token, got % ` => A comment is messing things up somewhere. Probably fixed by now
 
 3. Error : `SyntaxError: Unexpected token at index 0: Expected "@", got "%"` => First line in the file is a comment.
+
+4. SyntaxError: `Escape sequence not recognized: $Sequence` => Some escape sequence is not parseable. To fix, replace or remove the unrecognized sequence
 
 ### Implementation:
 
